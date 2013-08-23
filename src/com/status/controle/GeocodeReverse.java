@@ -66,8 +66,8 @@ public class GeocodeReverse {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}finally{
-			//liberar conexão ?
-			//client.getConnectionManager().shutdown();
+			//liberar conexão 
+			client.getConnectionManager().shutdown();
 		}
 
 		JsonObject jsonObject = new JsonObject();
